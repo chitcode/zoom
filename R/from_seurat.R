@@ -19,7 +19,7 @@ prepare_from_seurat <- function(seuratObj, data.path, export.path,
                                     multiSamplePattern = "_",
                                     verbose = FALSE){
 
-  stopifnot('seuratObj must be a Seurat object' = "SeuratObject" %in% class(seuratObj))
+  stopifnot('seuratObj must be a class of Seurat object' = "Seurat" %in% class(seuratObj))
 
   seurat.idents <- unique(seuratObj$orig.ident)
   sel.ident <- NA
