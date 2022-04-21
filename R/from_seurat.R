@@ -11,7 +11,6 @@
 #'
 #' @return
 #' @export
-#'
 #' @examples
 prepare_from_seurat <- function(seuratObj, data.path, export.path,
                                     clusterNames = NULL,
