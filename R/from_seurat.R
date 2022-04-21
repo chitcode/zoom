@@ -1,5 +1,18 @@
-# this function creates all the files for data visualization tool
-
+#' Title
+#'
+#' @param seuratObj A Seurat object
+#' @param data.path path for 10x output directory
+#' @param export.path path for output export
+#' @param clusterNames names of the clusters
+#' @param clusterGenes genes related to the clusters. This should be a list of arrays.
+#' @param top_5_genes whether to be shown top fir genes at the spot on mouseover
+#' @param multiSamplePattern the patterns to separate the multiple samples
+#' @param verbose whether to print the process on colsole
+#'
+#' @return
+#' @export
+#'
+#' @examples
 prepare_from_seurat <- function(seuratObj, data.path, export.path,
                                     clusterNames = NULL,
                                     clusterGenes = NULL,
